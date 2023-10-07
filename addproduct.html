@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Family Gebeya</title>
+    <meta name="keywords" content="family ,gebeya ,family gebeya">
+    <meta name="description" content="">
+    <meta name="author" content="familygebeya">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  -->
+    <!-- owl stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+</head>
+
+<body>
+    <!-- banner bg main start -->
+    <div class="banner_bg_main position-relative ">
+        <!-- header top section start -->
+        <div class="container">
+            <div class="header_section_top_menubars">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="custom_menu ">
+                            <a href="index.html">
+                                <h1 id="cmname">Family ገበያ</h1>
+                            </a>
+
+                            <ul>
+                                <li><a href="index.html">home</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- banner bg main end -->
+    <!-- fashion section start -->
+    <div class="fashion_section ">
+        <div id="main_slider" class="carousel slide  " data-ride="carousel">
+            <div class="carousel-">
+                <div class="carousel-item bg-white active">
+                    <div class="container">
+                        <h1 class="fashion_taital">Add Products </h1>
+                        <div class="myframes " style=" max-height: 500px; overflow:auto">
+                            <div class="col " style="width: 98%;left: 1%; ">
+                                <div class="col col frames" id="div1">
+                                    <div class="box_main d-flex">
+                                        <div class="pro_img"><input type="file" name="photo" class="photo"
+                                                onchange="setimage(this);"><img src="images/tshirt-img.png"></div>
+                                        <div class="discrpro">
+                                            <input type="text" name="proName" class="proName"
+                                                placeholder="name of product ">
+                                            <input type="text" class="model" name="model"
+                                                placeholder="model of product"> <span style="color: #262626;"
+                                                id="price">
+                                                <input type="number" class="proprice" min="10" placeholder="price"
+                                                    aria-controls="none"></span>
+                                        </div>
+                                        <div class="input_price_div">
+                                            <div> <span id="select_catagory">Catagories
+                                                    <select class="m-0 w-75" name="product_catagory"
+                                                        id="product_catagory" >
+                                                        <option value="Clothing_and_Accessories">Clothing and
+                                                            Accessories</option>
+                                                        <option value="Electronics_and_Gadgets">Electronics and Gadgets
+                                                        </option>
+                                                        <option value="Home_and_Kitchen_Appliances">Home and Kitchen
+                                                            Appliances</option>
+                                                        <option value="Beauty_and_Personal_Care_Products"> Beauty and
+                                                            Personal Care Products</option>
+                                                        <option value="Sports_and_Fitness_Equipment">Sports and Fitness
+                                                            Equipment</option>
+                                                        <option value="Books_and_Stationery">Books and Stationery
+                                                        </option>
+                                                        <option value="Toys">Toys </option>
+                                                        <option value="Furniture">Furniture</option>
+                                                        <option value="Baby_and_Kids">Baby and Kids </option>
+                                                        <option value="Health_and_Wellness_Products"> Health and
+                                                            Wellness Products</option>
+                                                    </select></span></div>
+                                            <div> <a class="" onclick="setcart(this)">&times;</a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <p class="errormsg text-center font-italic text-danger"> </p>
+                        <p class="success text-center font-italic text-success"> </p>
+                    </div>
+
+                    <div class="add_and_save_button">
+                        <button onclick="addframe();">Add template</button>
+                        <button onclick="saveproduct();">Save Products</button>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- fashion section end -->
+
+    <div class="popnotification">
+        <div>
+            <p id="pop_massage">do you want to delete an Item</p>
+            <div class="popanswer">
+                <p id="cancel">Cancel</p>
+                <p id="ok">Yes</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script> </script>
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/addproduct.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Family Gebeya</title>
+    <meta name="keywords" content="family ,gebeya ,family gebeya">
+    <meta name="description" content="">
+    <meta name="author" content="familygebeya">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--  -->
+    <!-- owl stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+</head>
+
+<body>
+    <!-- banner bg main start -->
+
+    <div class="banner_bg_main position-relative ">
+        <!-- header top section start -->
+        <div class="container">
+            <div class="header_section_top_menubars">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="custom_menu ">
+                            <a href="index.html">
+                                <h1 id="cmname">Family ገበያ</h1>
+                            </a>
+
+                            <ul>
+                                <li><a href="index.html">home</a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+   
+    <!-- banner bg main end -->
+
+    <div class="simplenotfy" style="position:fixed;top:100%;width:100%;z-index:1;display:flex;justify-content:center;align-items:center;transition:Top .5s ease-in-out">
+<p class="msg" style="min-height:50px;color:white; min-width:200px;background-color:rgb(0, 0, 0,0.7);font-size:14px; font-weight:bold;display:flex;justify-content:center;align-items:center; border:none;border-radius:5px;padding:15px;">
+    do you want to delete an Item
+</p>
+
+    </div>
+    <div class="popnotification">
+        <div>
+            <p id="pop_massage">do you want to delete an Item</p>
+            <div class="popanswer">
+                <p id="cancel">Cancel</p>
+                <p id="ok">Yes</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mydivcontainer " id="myprocontainer">
+
+        <div id="mydivcontainer2 ">
+            <div>
+                <h1 class="fashion_taital">Your Products </h1>
+                <a href="addproduct.html" class="text-center"> add product</a>
+                <div class=" my_product  " style="max-height:500px;  overflow-y:auto;margin-bottom:10px;">
+
+                </div>
+            </div>
+
+            <div id="orderdiscr" style="height:400px">
+                <h1 class="fashion_taital">Edit product </h1>
+                <button id="backbutton">&leftarrow;</button>
+                <div class="fashion_section_2 d-flex  justify-content-">
+
+                    <div class="col" style="width: 98%;left: 1%;">
+
+                        <div class="col col" id="div1">
+                            <div class="box_main d-flex editting_of_product">
+                                <div class="pro_img">
+                                    <input type="file" id="newphoto" onchange="setimage(this)">
+                                    <img src="images/tshirt-img.png">
+
+                                </div>
+                                <div class="discrpro">
+                                    <input type="text" id="name_of_product" class="" placeholder="name of product ">
+                                    <input type="text" id="model_of_product" placeholder="model of product">
+
+                                </div>
+
+                                <div class="input_price_div">
+
+                                    <div>
+                                        <span style="color: #262626;" id="price"> <input type="number" min="10"
+                                                id="price_of_product" placeholder="price"></span>
+                                    </div>
+
+                                    <div>
+                                        <a class="Save" onclick="updateproduct() ">s<i class="fa fa-check" aria-valuetext="x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+         var x=Number(window.innerHeight)-Number(document.querySelector(".banner_bg_main").clientHeight)-80 
+       
+    document.querySelector(".my_product").style.height=x+"px"
+
+    </script>
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/foralljs.js"></script>
+
+    <script src="js/product.js"> </script>
+</body>
+
+</html>
